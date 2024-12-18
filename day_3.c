@@ -93,7 +93,7 @@ static int end(int error) {
   return 0;
 }
 
-void Day_3(const char *filename) {
-  printf("DAY3 %s\n", filename);
+void Day_3(const char *filename, int day) {
+  printf("DAY3%d %s\n", day, filename);
   read_file(filename, start, line, end);
 }

@@ -140,7 +140,7 @@ static int end(int error) {
   return 0;
 }
 
-void Day_4(const char *filename) {
-  printf("DAY4 %s\n", filename);
+void Day_4(const char *filename, int day) {
+  printf("DAY4%d %s\n", day, filename);
   read_file(filename, start, line, end);
 }

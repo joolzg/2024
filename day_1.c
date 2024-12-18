@@ -90,8 +90,8 @@ static int end_real(int error) {
   return 0;
 }
 
-void Day_1(const char *filename) {
-  printf("DAY1 %s\n", filename);
+void Day_1(const char *filename, int day) {
+  printf("DAY1%d %s\n", day, filename);
   read_file(filename, start, line, end);
   read_file(filename, start_real, line_real, end_real);
 }

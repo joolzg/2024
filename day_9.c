@@ -187,7 +187,7 @@ static int end(int error) {
   return 0;
 }
 
-void Day_9(const char *filename) {
-  printf("DAY9 %s\n", filename);
+void Day_9(const char *filename, int day) {
+  printf("DAY9%d %s\n", day, filename);
   read_file(filename, start, line, end);
 }
